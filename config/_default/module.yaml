@@ -5,8 +5,8 @@
 ############################
 
 imports:
-  - path: github.com/HugoBlox/hugo-blox-builder/modules/blox-plugin-netlify
-  - path: github.com/HugoBlox/hugo-blox-builder/modules/blox-tailwind
+  - path: modules/blox-plugin-netlify
+  - path: modules/blox-tailwind
 
 # Install the private All Access Blox from the `hugo-blox/blox/` folder
 mounts:
