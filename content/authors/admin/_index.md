@@ -34,6 +34,7 @@ profiles:
     url: https://twitter.com/
   - icon: brands/github
     url: https://github.com/MLSys-Group-UCSD
+---
 
 ## I live in San Francisco, designing large language models at OpenAI.
 
