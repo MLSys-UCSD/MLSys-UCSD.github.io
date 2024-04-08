@@ -6,7 +6,7 @@ title: ML Systems Group @UCSD
 name_pronunciation: 
 
 # Full name (for SEO)
-first_name: ML System Group @UCSD
+first_name: MLSys Group @UCSD
 last_name: 
 
 # Status emoji
@@ -21,14 +21,14 @@ role:
 
 # Organizations/Affiliations to display in Biography blox
 organizations:
-  - name: ML System Group @UCSD
+  - name: MLSys Group @UCSD
     url: MLSys-Group-UCSD.github.io
 
 # Social network links
 # Need to use another icon? Simply download the SVG icon to your `assets/media/icons/` folder.
 profiles:
   - icon: at-symbol
-    url: haozhang@ucsd.edu
+    mailto: haozhang@ucsd.edu
     label: E-mail Me
   - icon: brands/x
     url: https://twitter.com/

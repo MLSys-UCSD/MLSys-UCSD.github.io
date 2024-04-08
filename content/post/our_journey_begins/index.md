@@ -18,4 +18,4 @@ tags:
   - Thoughts
 ---
 
-Welcome! We are launching MLSys Group @UCSD and here our new journey begins!
+Welcome! We are launching the MLSys Group @UCSD and here our new journey begins!
