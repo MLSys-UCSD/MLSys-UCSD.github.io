@@ -12,17 +12,17 @@ sections:
 
       - Our research interests include:
 
-      * - State-of-the-art machine leaerning models.
+      * -- State-of-the-art machine leaerning models.
 
-      * - Algorithms and systems for large-scale ML workloads.
+      * -- Algorithms and systems for large-scale ML workloads.
 
-      * - Security for ML and security for systems.
+      * -- Security for ML and security for systems.
 
-      * - Next-generation computer architecture for ML.
+      * -- Next-generation computer architecture for ML.
 
-      * - AI agents.
+      * -- AI agents.
 
-      * - Applications (IoT, AI for Science, etc.).'
+      * -- Applications (IoT, AI for Science, etc.).'
 
   - block: collection
     id: section-collection
