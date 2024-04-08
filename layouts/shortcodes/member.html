@@ -28,18 +28,18 @@
 </head>
 
 <div class="member">
-    <figure src="/members/{{ .Get 'image' }}" alt="{{ .Get 'name' }}" style='member'>
+    <figure src="{{ .Get "image" }}" alt="{{ .Get "name" }}" style="member">
     <h3 style="text-align center">{{ .Get "name" }}</h3>
     <p style="text-align center">{{ .Get "role" }}</p>
     <div class="social-links">
         {{ if .Get "twitter" }}
-        <a href="{{ .Get 'twitter' }}"><i class="fab fa-twitter"></i></a>
+        <a href="{{ .Get "twitter" }}"><i class="fab fa-twitter"></i></a>
         {{ end }}
         {{ if .Get "academic" }}
-        <a href="{{ .Get 'academic' }}"><i class="fas fa-home"></i></a>
+        <a href="{{ .Get "academic" }}"><i class="fas fa-home"></i></a>
         {{ end }}
         {{ if .Get "linkedin" }}
-            <a href="{{ .Get 'linkedin' }}"><i class="fab fa-linkedin"></i></a>
+            <a href="{{ .Get "linkedin" }}"><i class="fab fa-linkedin"></i></a>
         {{ end }}
     </div>
 </div>
