@@ -2,7 +2,7 @@
 title: 'Home'
 type: landing
 sections:
-  - block: markdown-about
+  - block: markdown
     id: section-about
     content:
       title: About

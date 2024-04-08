@@ -5,8 +5,8 @@
 {{/* Initialise */}}
 {{ $page := .wcPage }}
 {{ $block := .wcBlock }}
-{{ $title := content.title | emojify}}
-{{ $text := content.text | emojify}}
+{{ $title := $block.content.title | emojify}}
+{{ $text := $block.content.text | emojify}}
 
 <div class="flex flex-col items-center max-w-prose mx-auto gap-3">
 
