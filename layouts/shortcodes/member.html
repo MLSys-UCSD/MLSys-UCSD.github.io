@@ -12,7 +12,7 @@
             font-size: 1.0rem; /* Adjust the font size as needed */
         }
         .member p, .member .social-links {
-            font-size: 1.0rem; /* Adjust the font size as needed */
+            font-size: 0.75rem; /* Adjust the font size as needed */
         }
         .member {
             display: grid; /* Enables the use of CSS Grid layout */
@@ -28,7 +28,7 @@
 </head>
 
 <div class="member">
-    <img src="/members/{{ .Get "image" }}" alt="{{ .Get "name" }}" style="member">
+    <figure src="/members/{{ .Get "image" }}" alt="{{ .Get "name" }}" style="member">
     <h3 style="text-align center">{{ .Get "name" }}</h3>
     <p style="text-align center">{{ .Get "role" }}</p>
     <div class="social-links">
