@@ -17,3 +17,4 @@ pager: false
 {{< member name="Jishen Zhao" role="Associate Professor" image="jishen_zhao.jpeg">}}
 
 {{< member name="Yiying Zhang" role="Associate Professor" image="yiying_zhang.jpeg">}}
+{{< /members_grid >}}
