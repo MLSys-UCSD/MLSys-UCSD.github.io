@@ -7,12 +7,15 @@ main:
   - name: Home
     url: /
     weight: 10
-  - name: Topics
-    url: tags/
+  - name: People
+    url: people/
     weight: 20
-  - name: About
-    url: about/
+  - name: Announcements
+    url: announcements/
     weight: 30
-  - name: Uses
-    url: uses/
+  - name: Projects
+    url: projects/
     weight: 40
+  - name: Publications
+    url: publications/
+    weight: 50
