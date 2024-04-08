@@ -1,5 +1,5 @@
 ---
-title: Annoucements
+title: Announcements
 type: landing
 ---
 
