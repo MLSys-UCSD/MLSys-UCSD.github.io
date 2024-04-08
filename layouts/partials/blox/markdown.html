@@ -17,9 +17,9 @@
   </style>
 </head>
 
-<div class="header-markdown flex flex-col max-w-prose mx-auto gap-3" style="text-align: justify;">
+<div class="header-markdown flex flex-col max-w-prose mx-auto" style="text-align: justify;">
 
-  <div class="mb-6 text-xl font-bold text-gray-900 dark:text-white">
+  <div class="mb-6 text-2xl font-bold text-gray-900 dark:text-white">
     {{ $title }}
   </div>
   {{ with $text}}<p class="prose prose-slate lg:prose-xl dark:prose-invert max-w-prose">{{ . | markdownify }}</p>{{ end }}
