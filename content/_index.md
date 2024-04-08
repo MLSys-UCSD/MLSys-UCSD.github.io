@@ -2,7 +2,7 @@
 title: 'Home'
 type: landing
 sections:
-  - block: about
+  - block: markdown
     id: section-about
     content:
       title: About
@@ -18,7 +18,6 @@ sections:
       - Next-generation computer architecture for ML
       - AI agents
       - Applications (IoT, AI for Science, etc.)'
-
   - block: collection
     id: section-collection
     content:
