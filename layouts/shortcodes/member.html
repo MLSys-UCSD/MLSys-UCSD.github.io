@@ -28,9 +28,9 @@
 </head>
 
 <div class="member">
-    <img src="members/{{ .Get "image" }}" alt="{{ .Get "name" }}" style="member">
-    <h3>{{ .Get "name" }}</h3>
-    <p>{{ .Get "role" }}</p>
+    <img src="/members/{{ .Get "image" }}" alt="{{ .Get "name" }}" style="member">
+    <h3 style="text-align center">{{ .Get "name" }}</h3>
+    <p style="text-align center">{{ .Get "role" }}</p>
     <div class="social-links">
         {{ if .Get "twitter" }}
         <a href="{{ .Get "twitter" }}"><i class="fab fa-twitter"></i></a>
