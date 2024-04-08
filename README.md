@@ -1,4 +1,4 @@
-# [hao-ai-lab.github.io](https://hao-ai-lab.github.io/)
+# [MLSys-Group-UCSD.github.io](https://MLSys-Group-UCSD.github.io/)
 
 This git repo hosts all content displayed on the website of ML Systems Group @ UCSD.
 
