@@ -1,0 +1,45 @@
+<head>
+    <!-- Other head elements -->
+    <style>
+        .member img,
+        .member h3,
+        .member p,
+        .member .social-links {
+            margin-top: 0; /* Reduces space above the element */
+            margin-bottom: 0px; /* Reduces space below the element, adjust as needed */
+        }
+        .member h3 {
+            font-size: 1.0rem; /* Adjust the font size as needed */
+        }
+        .member p, .member .social-links {
+            font-size: 1.0rem; /* Adjust the font size as needed */
+        }
+        .member {
+            display: grid; /* Enables the use of CSS Grid layout */
+        }
+
+        .member img {
+            width: 100%; /* Ensures the image takes the full width of its container */
+            height: auto; /* Maintains the image's aspect ratio */
+            aspect-ratio: 1 / 1; /* Adjust this value to change the aspect ratio */
+            object-fit: cover; /* Ensures the image covers the area, cropping as necessary */
+        }
+    </style>
+</head>
+
+<div class="member">
+    <img src="members/{{ .Get "image" }}" alt="{{ .Get "name" }}" style="member">
+    <h3>{{ .Get "name" }}</h3>
+    <p>{{ .Get "role" }}</p>
+    <div class="social-links">
+        {{ if .Get "twitter" }}
+        <a href="{{ .Get "twitter" }}"><i class="fab fa-twitter"></i></a>
+        {{ end }}
+        {{ if .Get "academic" }}
+        <a href="{{ .Get "academic" }}"><i class="fas fa-home"></i></a>
+        {{ end }}
+        {{ if .Get "linkedin" }}
+            <a href="{{ .Get "linkedin" }}"><i class="fab fa-linkedin"></i></a>
+        {{ end }}
+    </div>
+</div>
