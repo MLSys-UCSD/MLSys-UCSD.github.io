@@ -9,6 +9,6 @@ This git repo hosts all content displayed on the website of ML Systems Group @ U
 2. Run the following commands:
 ```bash
 git clone https://github.com/MLSys-Group-UCSD/MLSys-Group-UCSD.github.io.git
-cd hao-ai-lab.github.io
+cd MLSys-Group-UCSD.github.io
 hugo server
 ```
