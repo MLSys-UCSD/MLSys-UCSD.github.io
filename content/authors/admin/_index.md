@@ -27,9 +27,6 @@ organizations:
 # Social network links
 # Need to use another icon? Simply download the SVG icon to your `assets/media/icons/` folder.
 profiles:
-  - icon: at-symbol
-    mailto: haozhang@ucsd.edu
-    label: E-mail Me
   - icon: brands/x
     url: https://twitter.com/
   - icon: brands/github
