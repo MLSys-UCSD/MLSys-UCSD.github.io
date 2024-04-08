@@ -8,11 +8,11 @@
 {{ $title := $block.content.title | emojify | $page.RenderString |markdownify }}
 {{ $text := $block.content.text | emojify | $page.RenderString | markdownify }}
 
-<div>
+<div class="flex flex-col items-center max-w-prose mx-auto gap-3">
 
   <div class="mb-6 text-3xl font-bold text-gray-900 dark:text-white" style="text-align: left;">
     {{ $title }}
   </div>
 
-  {{ with $text}}<p style="text-align: justify;">{{ . }}</p>{{ end }}
+  {{ with $text}}<p class="prose prose-slate lg:prose-xl dark:prose-invert max-w-prose" style="text-align: justify;">{{ . }}</p>{{ end }}
 </div>
