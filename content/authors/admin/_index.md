@@ -1,12 +1,12 @@
 ---
 # Display name
-title: ML Systems Group @UCSD
+title: MLSys @UCSD
 
 # Name pronunciation (optional)
 name_pronunciation: 
 
 # Full name (for SEO)
-first_name: MLSys Group @UCSD
+first_name: MLSys @UCSD
 last_name: 
 
 # Status emoji
@@ -21,8 +21,8 @@ role:
 
 # Organizations/Affiliations to display in Biography blox
 organizations:
-  - name: MLSys Group @UCSD
-    url: MLSys-Group-UCSD.github.io
+  - name: MLSys @UCSD
+    url: MLSys-UCSD.github.io
 
 # Social network links
 # Need to use another icon? Simply download the SVG icon to your `assets/media/icons/` folder.
@@ -30,7 +30,7 @@ profiles:
   - icon: brands/x
     url: https://twitter.com/
   - icon: brands/github
-    url: https://github.com/MLSys-Group-UCSD
+    url: https://github.com/MLSys-UCSD
 ---
 
 ## We are a group of passionate researchers and students working at the intersection of machine learning and systems at UCSD.

@@ -1,6 +1,6 @@
 ---
 title: Our New Journey Begins
-summary: 🎉 MLSys Group @UCSD is launched!
+summary: 🎉 MLSys @UCSD is launched!
 date: 2024-04-08
 
 # Featured image
