@@ -1,5 +1,5 @@
 ---
-title: Announcements
+title: Talks
 share: false
 show_date: false
 reading_time: false
