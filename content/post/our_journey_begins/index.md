@@ -14,8 +14,7 @@ authors:
   - admin
 
 tags:
-  - Blog
-  - Thoughts
+  - News
 ---
 
 Welcome! We are launching the MLSys Group @UCSD and here our new journey begins!
