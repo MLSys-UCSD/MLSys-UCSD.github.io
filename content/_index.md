@@ -6,23 +6,29 @@ sections:
     id: section-about
     content:
       title: Mission Statement
-      text: '**We are a group of passionate researchers and students working at the intersection of machine learning and systems at UCSD**.
+      text: '**We are a group of faculty, researchers, and students pushing the frontiers of systems for machine learning (ML) and artificial intelligence (AI) and their applications**.
 
-      - Our collaborative effort brings together the [the Halıcıoğlu Data Science Institute](https://datascience.ucsd.edu/) and [the Computer Science and Engineering Department](https://cse.ucsd.edu/) at [the University of California, San Diego](https://ucsd.edu/). We host a series of events including biweekly seminars and reading groups and we invite interested students and faculty members to join!
+      - Our current members span [the Computer Science and Engineering Department](https://cse.ucsd.edu/) (CSE) and [the Halıcıoğlu Data Science Institute](https://datascience.ucsd.edu/) (HDSI) [the Computer Science and Engineering Department](https://cse.ucsd.edu/) at [the University of California, San Diego](https://ucsd.edu/). We invite all interested people to join our seminar mailing list. 
 
       - Our research interests include:
 
-      * -- State-of-the-art machine leaerning models.
+      * - Systems for ML/AI training, tuning, inference, and serving
+  
+      * - ML/AI for building systems (e.g., OS, network systems, etc.)
 
-      * -- Algorithms and systems for large-scale ML workloads.
+      *	- ML compilers and runtimes
 
-      * -- Security for ML and security for systems.
+      *	- Distributed and hardware-aware ML/AI methods
 
-      * -- Next-generation computer architecture for ML.
+      *	- New hardware for ML
 
-      * -- AI agents.
+      *	- Data preparation for ML/AI applications
+ 
+      *	- ML/AI system benchmarks and datasets
 
-      * -- Applications (IoT, AI for Science, etc.).'
+      *	- AI agents and augmented AI
+
+      *	- Applications of ML systems (e.g., IoT, natural sciences, public health, etc.)
 
   - block: collection
     id: section-collection
