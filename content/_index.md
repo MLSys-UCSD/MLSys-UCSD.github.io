@@ -28,7 +28,7 @@ sections:
 
       *	- AI agents and augmented AI
 
-      *	- Applications of ML systems (e.g., IoT, natural sciences, public health, etc.)
+      *	- Applications of ML systems (e.g., IoT, natural sciences, public health, etc.)'
 
   - block: collection
     id: section-collection
