@@ -8,7 +8,7 @@ sections:
       title: UC San Diego ML Systems Group
       text: '**We are a group of faculty, researchers, and students pushing the frontiers of systems for machine learning (ML) and artificial intelligence (AI) and their applications**.
 
-      - Our current members span [the Computer Science and Engineering Department](https://cse.ucsd.edu/) (CSE) and [the Halıcıoğlu Data Science Institute](https://datascience.ucsd.edu/) (HDSI) [the Computer Science and Engineering Department](https://cse.ucsd.edu/) at [the University of California, San Diego](https://ucsd.edu/). We invite all interested people to join our seminar mailing list. 
+      - Our current members span [the Computer Science and Engineering Department](https://cse.ucsd.edu/) (CSE) and [the Halıcıoğlu Data Science Institute](https://datascience.ucsd.edu/) (HDSI) [the Computer Science and Engineering Department](https://cse.ucsd.edu/) at [the University of California, San Diego](https://ucsd.edu/).
 
       - Our research interests include:
 
