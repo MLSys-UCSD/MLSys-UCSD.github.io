@@ -8,27 +8,34 @@ sections:
       title: UC San Diego ML Systems Group
       text: '**We are a group of faculty, researchers, and students pushing the frontiers of systems for machine learning (ML) and artificial intelligence (AI) and their applications**.
 
-      - Our current members span [the Computer Science and Engineering Department](https://cse.ucsd.edu/) (CSE) and [the Halıcıoğlu Data Science Institute](https://datascience.ucsd.edu/) (HDSI) [the Computer Science and Engineering Department](https://cse.ucsd.edu/) at [the University of California, San Diego](https://ucsd.edu/).
+      Our current members span [the Computer Science and Engineering Department](https://cse.ucsd.edu/) (CSE) and [the Halıcıoğlu Data Science Institute](https://datascience.ucsd.edu/) (HDSI) [the Computer Science and Engineering Department](https://cse.ucsd.edu/) at [the University of California, San Diego](https://ucsd.edu/).
 
-      - Our research interests include:
+      Our research interests include:
 
-      * - Systems for ML/AI training, tuning, inference, and serving
+      - Systems for ML/AI training, tuning, inference, and serving
   
-      * - ML/AI for building systems (e.g., OS, network systems, etc.)
+      - ML/AI for building systems (e.g., OS, network systems, etc.)
 
-      *	- ML compilers and runtimes
+      - ML compilers and runtimes
 
-      *	- Distributed and hardware-aware ML/AI methods
+      - Distributed and hardware-aware ML/AI methods
 
-      *	- New hardware for ML
+      - New hardware for ML
 
-      *	- Data preparation for ML/AI applications
+      - Data preparation for ML/AI applications
  
-      *	- ML/AI system benchmarks and datasets
+      - ML/AI system benchmarks and datasets
 
-      *	- AI agents and augmented AI
+      - AI agents and augmented AI
 
-      *	- Applications of ML systems (e.g., IoT, natural sciences, public health, etc.)'
+      - Applications of ML systems (e.g., IoT, natural sciences, public health, etc.)'
+    
+    design:
+      # Choose how many columns the section has. Valid values: '1' or '2'.
+      columns: '1'    
+      spacing:
+        # Customize the section spacing. Order is top, right, bottom, left.
+        padding: ['0', '0', '-60px', '0']
 
   - block: collection
     id: section-collection
