@@ -1,6 +1,6 @@
 /** @type {import("pliny/config").PlinyConfig } */
 const siteMetadata = {
-  title: 'Witesite for MLsys@UCSD',
+  title: 'MLsys@UCSD',
   author: 'UCSD-MLsys',
   headerTitle: 'MLsys@UCSD',
   description: 'We are a group of faculty, researchers, and students pushing the frontiers of systems for machine learning (ML) and artificial intelligence (AI) and their applications.',
