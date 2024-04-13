@@ -2,7 +2,6 @@ import Link from '@/components/Link'
 import Tag from '@/components/Tag'
 import siteMetadata from '@/data/siteMetadata'
 import { formatDate } from 'pliny/utils/formatDate'
-import NewsletterForm from 'pliny/ui/NewsletterForm'
 
 const MAX_DISPLAY = 5
 
@@ -15,8 +14,12 @@ export default function Home({ posts }) {
             UC San Diego ML Systems Group
           </h1>
           <h2 className="prose text-lg text-gray-600 dark:text-gray-400">
-            We are a group of faculty, researchers, and students pushing the frontiers of systems for machine learning (ML) and artificial intelligence (AI) and their applications.
-            Our current members span the Computer Science and Engineering Department (CSE) and the Halıcıoğlu Data Science Institute (HDSI) the Computer Science and Engineering Department at the University of California, San Diego.
+            {`We are a group of faculty, researchers, and students targeting at the intersection of machine learning and systems. 
+            Our current members span the Computer Science and Engineering Department `}
+            (<Link href="https://cse.ucsd.edu">CSE</Link>)
+            {`and the Halıcıoğlu Data Science Institute `}
+            (<Link href="https://datascience.ucsd.edu">HDSI</Link>)
+            {` the Computer Science and Engineering Department at the University of California, San Diego. Our research focuses on a broad spectrum of topics aimed at advancing next-generation systems for machine learning and developing innovative algorithms.`}
           </h2>
         </div>
         <div className="pt-6 flex-col xl:mb-12">
@@ -24,7 +27,7 @@ export default function Home({ posts }) {
             Research Areas
           </h2>
           <div className="text-lg text-gray-600 dark:text-gray-400">
-            <div className="list-disc text-gray-600 dark:text-gray-400 md:text-base sm:text-lg">
+            <div className="list-disc text-gray-600 dark:text-gray-400">
               <li>Systems for ML/AI</li>
               <li>ML/AI for building systems</li>
               <li>ML compilers and runtimes</li>
@@ -38,7 +41,7 @@ export default function Home({ posts }) {
         </div>
       </div>
       <div className="divide-y divide-gray-200 dark:divide-gray-700">
-        <div className="space-y-2 pb-8 pt-6 md:space-y-5">
+        <div className="space-y-2 pb-8 pt-2 md:space-y-5">
           <h1 className="text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-6xl md:leading-14">
             News
           </h1>
