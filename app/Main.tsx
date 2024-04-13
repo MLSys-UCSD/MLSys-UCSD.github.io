@@ -17,12 +17,12 @@ export default function Home({ posts }) {
             {`We are a group of faculty, researchers, and students targeting at the intersection of machine learning and systems. 
             Our current members span the Computer Science and Engineering Department `}
             (<Link href="https://cse.ucsd.edu">CSE</Link>)
-            {`and the Halıcıoğlu Data Science Institute `}
-            (<Link href="https://datascience.ucsd.edu">HDSI</Link>)
+            {`and the Halıcıoğlu Data Science Institute `}(
+            <Link href="https://datascience.ucsd.edu">HDSI</Link>)
             {` the Computer Science and Engineering Department at the University of California, San Diego. Our research focuses on a broad spectrum of topics aimed at advancing next-generation systems for machine learning and developing innovative algorithms.`}
           </h2>
         </div>
-        <div className="pt-6 flex-col xl:mb-12">
+        <div className="flex-col pt-6 xl:mb-12">
           <h2 className="pb-2 text-2xl font-bold leading-8 tracking-tight text-gray-900 dark:text-gray-100 sm:leading-8 md:text-3xl md:leading-8">
             Research Areas
           </h2>
