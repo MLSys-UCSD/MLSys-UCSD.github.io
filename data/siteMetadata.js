@@ -6,8 +6,8 @@ const siteMetadata = {
   description: 'We are a group of faculty, researchers, and students pushing the frontiers of systems for machine learning (ML) and artificial intelligence (AI) and their applications.',
   language: 'en-us',
   theme: 'system', // system, dark or light
-  siteUrl: 'https://mlsys-ucsd.org/',
-  siteRepo: 'https://github.com/MLSys-UCSD/MLSys-UCSD-Website',
+  siteUrl: 'https://mlsys-ucsd.github.io/',
+  siteRepo: 'https://github.com/MLSys-UCSD/MLSys-UCSD',
   siteLogo: '/static/images/logo.png',
   mastodon: 'https://mastodon.social/@mastodonuser',
   email: 'address@yoursite.com',
