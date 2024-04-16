@@ -79,18 +79,18 @@ export default function ListLayoutWithTags({
     <>
       <div>
         <div className="pb-6 pt-6">
-          <h1 className="text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:hidden sm:text-4xl sm:leading-10 md:text-6xl md:leading-14">
+          <h1 className="text-2xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:hidden sm:text-2xl sm:leading-10 md:text-4xl md:leading-14">
             {title}
           </h1>
         </div>
         <div className="flex sm:space-x-24">
           <div className="hidden h-full max-h-screen min-w-[280px] max-w-[280px] flex-wrap overflow-auto rounded bg-gray-50 pt-5 shadow-md dark:bg-gray-900/70 dark:shadow-gray-800/40 sm:flex">
             <div className="px-6 py-4">
-              {pathname.startsWith('/blog') ? (
+              {pathname.startsWith('/events') ? (
                 <h3 className="font-bold uppercase text-primary-500">All Posts</h3>
               ) : (
                 <Link
-                  href={`/blog`}
+                  href={`/events`}
                   className="font-bold uppercase text-gray-700 hover:text-primary-500 dark:text-gray-300 dark:hover:text-primary-500"
                 >
                   All Posts

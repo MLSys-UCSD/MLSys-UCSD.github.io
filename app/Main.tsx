@@ -10,10 +10,10 @@ export default function Home({ posts }) {
     <>
       <div className="my-6 flex flex-col gap-x-12 xl:mb-12 xl:flex-row">
         <div className="mr-8 pt-6">
-          <h1 className="pb-6 text-3xl font-extrabold leading-12 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-12 md:text-6xl md:leading-14">
+          <h1 className="pb-6 text-3xl font-extrabold leading-12 tracking-tight text-gray-900 dark:text-gray-100 sm:text-xl sm:leading-12 md:text-3xl md:leading-14">
             UC San Diego ML Systems Group
           </h1>
-          <h2 className="prose text-lg text-gray-600 dark:text-gray-400">
+          <h2 className="prose text-lg text-gray-600 dark:text-gray-400 text-justify">
             {`We are a group of faculty, researchers, and students targeting at the intersection of machine learning and systems. 
             Our current members span the Computer Science and Engineering Department `}
             (<Link href="https://cse.ucsd.edu">CSE</Link>)
@@ -23,7 +23,7 @@ export default function Home({ posts }) {
           </h2>
         </div>
         <div className="flex-col pt-6 xl:mb-12">
-          <h2 className="pb-2 text-2xl font-bold leading-8 tracking-tight text-gray-900 dark:text-gray-100 sm:leading-8 md:text-3xl md:leading-8">
+          <h2 className="pb-2 text-2xl font-bold leading-8 tracking-tight text-gray-900 dark:text-gray-100 sm:leading-8 md:text-2xl md:leading-8">
             Research Areas
           </h2>
           <div className="text-lg text-gray-600 dark:text-gray-400">
@@ -42,8 +42,8 @@ export default function Home({ posts }) {
       </div>
       <div className="divide-y divide-gray-200 dark:divide-gray-700">
         <div className="space-y-2 pb-8 pt-2 md:space-y-5">
-          <h1 className="text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-6xl md:leading-14">
-            News
+          <h1 className="text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-2xl sm:leading-10 md:text-3xl md:leading-14">
+            events
           </h1>
         </div>
         <ul className="divide-y divide-gray-200 dark:divide-gray-700">
@@ -65,7 +65,7 @@ export default function Home({ posts }) {
                         <div>
                           <h2 className="text-2xl font-bold leading-8 tracking-tight">
                             <Link
-                              href={`/blog/${slug}`}
+                              href={`/events/${slug}`}
                               className="text-gray-900 dark:text-gray-100"
                             >
                               {title}
@@ -77,13 +77,13 @@ export default function Home({ posts }) {
                             ))}
                           </div>
                         </div>
-                        <div className="prose max-w-none text-gray-500 dark:text-gray-400">
+                        <div className="prose max-w-none text-gray-500 dark:text-gray-400 text-justify">
                           {summary}
                         </div>
                       </div>
                       <div className="text-base font-medium leading-6">
                         <Link
-                          href={`/blog/${slug}`}
+                          href={`/events/${slug}`}
                           className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
                           aria-label={`Read more: "${title}"`}
                         >
@@ -101,7 +101,7 @@ export default function Home({ posts }) {
       {posts.length > MAX_DISPLAY && (
         <div className="flex justify-end text-base font-medium leading-6">
           <Link
-            href="/blog"
+            href="/events"
             className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
             aria-label="All posts"
           >
@@ -109,9 +109,9 @@ export default function Home({ posts }) {
           </Link>
         </div>
       )}
-      {/* {siteMetadata.newsletter?.provider && (
+      {/* {siteMetadata.eventsletter?.provider && (
         <div className="flex items-center justify-center pt-4">
-          <NewsletterForm />
+          <eventsletterForm />
         </div>
       )} */}
     </>
