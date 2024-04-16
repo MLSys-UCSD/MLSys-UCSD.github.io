@@ -3,10 +3,11 @@ const siteMetadata = {
   title: 'MLsys@UCSD',
   author: 'UCSD-MLsys',
   headerTitle: 'MLsys@UCSD',
-  description: 'We are a group of faculty, researchers, and students pushing the frontiers of systems for machine learning (ML) and artificial intelligence (AI) and their applications.',
+  description:
+    'We are a group of faculty, researchers, and students pushing the frontiers of systems for machine learning (ML) and artificial intelligence (AI) and their applications.',
   language: 'en-us',
   theme: 'system', // system, dark or light
-  siteUrl: 'https://mlsys-ucsd.github.io/',
+  siteUrl: 'https://mlsys-ucsd.org/',
   siteRepo: 'https://github.com/MLSys-UCSD/MLSys-UCSD',
   siteLogo: '/static/images/logo.png',
   socialBanner: '/static/images/logo.png',
