@@ -9,6 +9,7 @@ const siteMetadata = {
   siteUrl: 'https://mlsys-ucsd.github.io/',
   siteRepo: 'https://github.com/MLSys-UCSD/MLSys-UCSD',
   siteLogo: '/static/images/logo.png',
+  socialBanner: '/static/images/logo.png',
   mastodon: 'https://mastodon.social/@mastodonuser',
   email: 'address@yoursite.com',
   github: 'https://github.com',
