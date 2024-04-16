@@ -139,7 +139,7 @@ export default function ListLayout({
                       {tags?.map((tag) => <Tag key={tag} text={tag} />)}
                     </div>
                     <div className="flex flex-wrap text-justify">
-                      {authors? authors.join(', ') : null}
+                      {authors ? authors.join(', ') : null}
                     </div>
                     <div className="prose max-w-none text-gray-500 dark:text-gray-400">
                       {summary}

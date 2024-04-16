@@ -8,10 +8,18 @@ export const metadata = genPageMetadata({ title: 'People' })
 
 export default function Page() {
   const authors = allAuthors as Authors[]
-  const faculty = authors.filter((author) => author.occupation && author.occupation.includes('Professor'))
-  const phd_students = authors.filter((author) => author.occupation && author.occupation.includes('PhD'))
-  const masters_students = authors.filter((author) => author.occupation && author.occupation.includes('Master'))
-  const undergrad_students = authors.filter((author) => author.occupation && author.occupation.includes('Undergrad'))
+  const faculty = authors.filter(
+    (author) => author.occupation && author.occupation.includes('Professor')
+  )
+  const phd_students = authors.filter(
+    (author) => author.occupation && author.occupation.includes('PhD')
+  )
+  const masters_students = authors.filter(
+    (author) => author.occupation && author.occupation.includes('Master')
+  )
+  const undergrad_students = authors.filter(
+    (author) => author.occupation && author.occupation.includes('Undergrad')
+  )
   // render all authors
   return (
     <>
