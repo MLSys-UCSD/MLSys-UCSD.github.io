@@ -13,7 +13,7 @@ export default function Home({ posts }) {
           <h1 className="pb-6 text-3xl font-extrabold leading-12 tracking-tight text-gray-900 dark:text-gray-100 sm:text-xl sm:leading-12 md:text-3xl md:leading-14">
             UC San Diego ML Systems Group
           </h1>
-          <h2 className="prose text-lg text-gray-600 dark:text-gray-400 text-justify">
+          <h2 className="prose text-justify text-lg text-gray-600 dark:text-gray-400">
             {`We are a group of faculty, researchers, and students targeting at the intersection of machine learning and systems. 
             Our current members span the Computer Science and Engineering Department `}
             (<Link href="https://cse.ucsd.edu">CSE</Link>)
@@ -77,7 +77,7 @@ export default function Home({ posts }) {
                             ))}
                           </div>
                         </div>
-                        <div className="prose max-w-none text-gray-500 dark:text-gray-400 text-justify">
+                        <div className="prose max-w-none text-justify text-gray-500 dark:text-gray-400y">
                           {summary}
                         </div>
                       </div>

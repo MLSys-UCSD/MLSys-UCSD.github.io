@@ -124,8 +124,7 @@ export default function ListLayout({
                     </dd>
                   </dl>
                   <div className="space-y-3 xl:col-span-3">
-                    <div>
-                      <h3 className="text-2xl font-bold leading-8 tracking-tight text-justify">
+                    <h3 className="text-justify text-2xl font-bold leading-8 tracking-tight">
                       {canonicalUrl ? (
                         <Link href={canonicalUrl} className="text-gray-900 dark:text-gray-100">
                           {title}
@@ -135,13 +134,12 @@ export default function ListLayout({
                           {title}
                         </Link>
                       )}
-                      </h3>
-                      <div className="flex flex-wrap">
-                        {tags?.map((tag) => <Tag key={tag} text={tag} />)}
-                      </div>
-                      <div className="flex flex-wrap text-justify">
-                        {authors.join(', ')}
-                      </div>
+                    </h3>
+                    <div className="flex flex-wrap">
+                      {tags?.map((tag) => <Tag key={tag} text={tag} />)}
+                    </div>
+                    <div className="flex flex-wrap text-justify">
+                      {authors.join(', ')}
                     </div>
                     <div className="prose max-w-none text-gray-500 dark:text-gray-400">
                       {summary}
