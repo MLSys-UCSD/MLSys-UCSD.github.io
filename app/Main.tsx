@@ -77,7 +77,7 @@ export default function Home({ posts }) {
                             ))}
                           </div>
                         </div>
-                        <div className="text-gray-500 prose max-w-none text-justify dark:text-gray-400y">
+                        <div className="dark:text-gray-400y prose max-w-none text-justify text-gray-500">
                           {summary}
                         </div>
                       </div>
