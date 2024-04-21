@@ -143,7 +143,7 @@ export default function ListLayoutWithTags({
                             {tags?.map((tag) => <Tag key={tag} text={tag} />)}
                           </div>
                         </div>
-                        <div className="prose max-w-none text-gray-500 dark:text-gray-400">
+                        <div className="dark:text-gray-4 prose max-w-none text-justify text-gray-500">
                           {summary}
                         </div>
                       </div>
