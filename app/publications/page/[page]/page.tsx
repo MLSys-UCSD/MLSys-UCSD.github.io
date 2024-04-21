@@ -2,7 +2,7 @@ import ListLayout from '@/layouts/ListLayoutPub'
 import { allCoreContent, sortPosts } from 'pliny/utils/contentlayer'
 import { allPublications } from 'contentlayer/generated'
 
-const POSTS_PER_PAGE = 5
+const POSTS_PER_PAGE = 50
 
 export const generateStaticParams = async () => {
   const totalPages = Math.ceil(allPublications.length / POSTS_PER_PAGE)
