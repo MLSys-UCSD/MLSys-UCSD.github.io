@@ -24,68 +24,73 @@ export default function Page() {
   return (
     <>
       <div>
-        <div className="space-y-2 pb-8 pt-6 md:space-y-5">
-          <h1 className="text-2xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-2xl sm:leading-10 md:text-3xl md:leading-14">
-            Faculty
-          </h1>
+        <div className="divide-y divide-gray-200 dark:divide-gray-700">
+          <div className="space-y-2 pb-8 pt-6 md:space-y-5">
+            <h1 className="text-2xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-2xl sm:leading-10 md:text-4xl md:leading-14">
+              Faculty
+            </h1>
+          </div>
+          <div className="items-start space-y-2 xl:grid xl:grid-cols-4 xl:gap-x-8 xl:space-y-0">
+            {faculty.map((author) => {
+              const mainContent = coreContent(author)
+              return (
+                <AuthorLayout key={author._id} content={mainContent}>
+                  <MDXLayoutRenderer code={author.body.code} />
+                </AuthorLayout>
+              )
+            })}
+          </div>
         </div>
-        <div className="items-start space-y-2 xl:grid xl:grid-cols-4 xl:gap-x-8 xl:space-y-0">
-          {faculty.map((author) => {
-            const mainContent = coreContent(author)
-            return (
-              <AuthorLayout key={author._id} content={mainContent}>
-                <MDXLayoutRenderer code={author.body.code} />
-              </AuthorLayout>
-            )
-          })}
+        <div className="divide-y divide-gray-200 dark:divide-gray-700">
+          <div className="space-y-2 pb-8 pt-6 md:space-y-5">
+            <h1 className="text-2xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-2xl sm:leading-10 md:text-4xl md:leading-14">
+              PhD Students
+            </h1>
+          </div>
+          <div className="items-start space-y-2 xl:grid xl:grid-cols-4 xl:gap-x-8 xl:space-y-0">
+            {phd_students.map((author) => {
+              const mainContent = coreContent(author)
+              return (
+                <AuthorLayout key={author._id} content={mainContent}>
+                  <MDXLayoutRenderer code={author.body.code} />
+                </AuthorLayout>
+              )
+            })}
+            </div>
         </div>
-
-        <div className="space-y-2 pb-8 pt-6 md:space-y-5">
-          <h1 className="text-2xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-2xl sm:leading-10 md:text-3xl md:leading-14">
-            PhD Students
-          </h1>
+        <div className="divide-y divide-gray-200 dark:divide-gray-700">
+          <div className="space-y-2 pb-8 pt-6 md:space-y-5">
+            <h1 className="text-2xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-2xl sm:leading-10 md:text-4xl md:leading-14">
+              Master Students
+            </h1>
+          </div>
+          <div className="items-start space-y-2 xl:grid xl:grid-cols-4 xl:gap-x-8 xl:space-y-0">
+            {masters_students.map((author) => {
+              const mainContent = coreContent(author)
+              return (
+                <AuthorLayout key={author._id} content={mainContent}>
+                  <MDXLayoutRenderer code={author.body.code} />
+                </AuthorLayout>
+              )
+            })}
+          </div>
         </div>
-        <div className="items-start space-y-2 xl:grid xl:grid-cols-4 xl:gap-x-8 xl:space-y-0">
-          {phd_students.map((author) => {
-            const mainContent = coreContent(author)
-            return (
-              <AuthorLayout key={author._id} content={mainContent}>
-                <MDXLayoutRenderer code={author.body.code} />
-              </AuthorLayout>
-            )
-          })}
-        </div>
-
-        <div className="space-y-2 pb-8 pt-6 md:space-y-5">
-          <h1 className="text-2xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-2xl sm:leading-10 md:text-3xl md:leading-14">
-            Master's Students
-          </h1>
-        </div>
-        <div className="items-start space-y-2 xl:grid xl:grid-cols-4 xl:gap-x-8 xl:space-y-0">
-          {masters_students.map((author) => {
-            const mainContent = coreContent(author)
-            return (
-              <AuthorLayout key={author._id} content={mainContent}>
-                <MDXLayoutRenderer code={author.body.code} />
-              </AuthorLayout>
-            )
-          })}
-        </div>
-
-        <div className="space-y-2 pb-8 pt-6 md:space-y-5">
-          <h1 className="text-2xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-2xl sm:leading-10 md:text-3xl md:leading-14">
-            Undergraduate Students
-          </h1>
-        </div>
-        <div className="items-start space-y-2 xl:grid xl:grid-cols-4 xl:gap-x-8 xl:space-y-0">
-          {undergrad_students.map((author) => {
-            const mainContent = coreContent(author)
-            return (
-              <AuthorLayout key={author._id} content={mainContent}>
-                <MDXLayoutRenderer code={author.body.code} />
-              </AuthorLayout>
-            )
-          })}
+        <div className="divide-y divide-gray-200 dark:divide-gray-700">
+          <div className="space-y-2 pb-8 pt-6 md:space-y-5">
+            <h1 className="text-2xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-2xl sm:leading-10 md:text-4xl md:leading-14">
+              Undergraduate Students
+            </h1>
+          </div>
+          <div className="items-start space-y-2 xl:grid xl:grid-cols-4 xl:gap-x-8 xl:space-y-0">
+            {undergrad_students.map((author) => {
+              const mainContent = coreContent(author)
+              return (
+                <AuthorLayout key={author._id} content={mainContent}>
+                  <MDXLayoutRenderer code={author.body.code} />
+                </AuthorLayout>
+              )
+            })}
+            </div>
         </div>
       </div>
     </>

@@ -124,7 +124,7 @@ export default function ListLayout({
                     </dd>
                   </dl>
                   <div className="space-y-3 xl:col-span-3">
-                    <h3 className="text-justify text-2xl font-bold leading-8 tracking-tight">
+                    <h3 className="text-justify text-xl font-bold leading-8 tracking-tight">
                       {canonicalUrl ? (
                         <Link href={canonicalUrl} className="text-gray-900 dark:text-gray-100">
                           {title}
