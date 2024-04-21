@@ -83,5 +83,3 @@ export function Home(svgProps: SVGProps<SVGSVGElement>) {
     </svg>
   )
 }
-
-

@@ -27,7 +27,7 @@ export default function Home({ posts }) {
             Research Areas
           </h2>
           <div className="text-lg text-gray-600 dark:text-gray-400">
-            <div className="list-disc text-gray-600 dark:text-gray-400 text-base">
+            <div className="list-disc text-base text-gray-600 dark:text-gray-400">
               <li>Systems for ML/AI</li>
               <li>ML/AI for building systems</li>
               <li>ML compilers and runtimes</li>
