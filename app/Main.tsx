@@ -49,7 +49,7 @@ export default function Home({ posts }) {
         <ul className="divide-y divide-gray-200 dark:divide-gray-700">
           {!posts.length && 'No posts found.'}
           {posts.slice(0, MAX_DISPLAY).map((post) => {
-            const { slug, date, title, summary, tags } = post
+            const { slug, date, title, summary, tags, speakers } = post
             return (
               <li key={slug} className="py-12">
                 <article>
@@ -59,6 +59,15 @@ export default function Home({ posts }) {
                       <dd className="text-base font-medium leading-6 text-gray-500 dark:text-gray-400">
                         <time dateTime={date}>{formatDate(date, siteMetadata.locale)}</time>
                       </dd>
+                      <div className="flex flex-wrap">
+                        {tags?.map((tag) => (
+                          <Tag
+                            key={tag}
+                            text={tag}
+                            textColor={tag === 'news' ? 'text-pink-500' : 'text-yellow-500'}
+                          />
+                        ))}
+                      </div>
                     </dl>
                     <div className="space-y-5 xl:col-span-3">
                       <div className="space-y-6">
@@ -71,12 +80,12 @@ export default function Home({ posts }) {
                               {title}
                             </Link>
                           </h2>
-                          <div className="flex flex-wrap">
-                            {tags.map((tag) => (
-                              <Tag key={tag} text={tag} />
-                            ))}
-                          </div>
                         </div>
+                        {speakers && (
+                          <div className="prose max-w-none text-justify text-gray-500 dark:text-gray-400">
+                            <b>{speakers}</b>
+                          </div>
+                        )}
                         <div className="dark:text-gray-400y prose max-w-none text-justify text-gray-500">
                           {summary}
                         </div>

@@ -122,7 +122,7 @@ export default function ListLayoutWithTags({
           <div>
             <ul>
               {displayPosts.map((post) => {
-                const { path, date, title, summary, tags } = post
+                const { path, date, title, summary, tags, images, speakers } = post
                 return (
                   <li key={path} className="py-5">
                     <article className="flex flex-col space-y-2 xl:space-y-0">
@@ -140,9 +140,28 @@ export default function ListLayoutWithTags({
                             </Link>
                           </h2>
                           <div className="flex flex-wrap">
-                            {tags?.map((tag) => <Tag key={tag} text={tag} />)}
+                            {tags?.map((tag) => (
+                              <Tag
+                                key={tag}
+                                text={tag}
+                                textColor={tag === 'news' ? 'text-pink-500' : 'text-yellow-500'}
+                              />
+                            ))}
                           </div>
                         </div>
+                        {speakers && (
+                          <div className="prose max-w-none text-justify text-gray-500 dark:text-gray-400">
+                            <b>{speakers}</b>
+                          </div>
+                        )}
+                        {images && images.length > 0 && (
+                          <img
+                            src={images[0]}
+                            alt={`Preview of ${title}`}
+                            className="w-full rounded-lg object-cover"
+                            style={{ height: '400px' }} // Set a fixed height or manage via CSS
+                          />
+                        )}
                         <div className="dark:text-gray-4 prose max-w-none text-justify text-gray-500">
                           {summary}
                         </div>
