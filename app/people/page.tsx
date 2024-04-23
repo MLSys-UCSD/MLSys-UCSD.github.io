@@ -15,7 +15,7 @@ export default function Page() {
     (author) => author.occupation && author.occupation.includes('PhD')
   )
   const masters_students = authors.filter(
-    (author) => author.occupation && author.occupation.includes('Master')
+    (author) => author.occupation && author.occupation.includes('Masters')
   )
   const undergrad_students = authors.filter(
     (author) => author.occupation && author.occupation.includes('Undergrad')
