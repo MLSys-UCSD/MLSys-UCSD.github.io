@@ -35,7 +35,7 @@ export default function Home({ posts }) {
               <li>Hardware software co-design for ML/AI</li>
               <li>ML/AI system benchmarks and datasets</li>
               <li>AIGC and agents</li>
-              <li>AI for science</li>
+              <li>AI systems for science</li>
             </div>
           </div>
         </div>
