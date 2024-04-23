@@ -19,7 +19,7 @@ export default function Home({ posts }) {
             (<Link href="https://cse.ucsd.edu">CSE</Link>)
             {` and the Halıcıoğlu Data Science Institute `}(
             <Link href="https://datascience.ucsd.edu">HDSI</Link>)
-            {` the Computer Science and Engineering Department at the University of California, San Diego. Our research focuses on a broad spectrum of topics aimed at advancing next-generation systems for machine learning and developing innovative algorithms.`}
+            {` at the University of California, San Diego. Our research focuses on a broad spectrum of topics aimed at advancing next-generation systems for machine learning and developing innovative algorithms.`}
           </h2>
         </div>
         <div className="flex-col pt-6 xl:mb-12">
