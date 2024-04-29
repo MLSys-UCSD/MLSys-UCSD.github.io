@@ -1,0 +1,30 @@
+---
+title: 'PyTorch 2: Faster Machine Learning Through Dynamic Python Bytecode Transformation and Graph'
+date: '2024-04-29 17:00:00'
+tags: [ 'MLSys Seminar']
+draft: false
+authors: ['mlsys', 'hosts/host_zhang_hao']
+speakers: 'Speaker: Dr. Jason Ansel, Meta AI'
+summary: PyTorch 2 leverages new technologies like TorchDynamo and TorchInductor to significantly enhance training and inference speeds without compromising its ease of use, flexibility, and Pythonic environment. TorchDynamo optimizes unmodified PyTorch code at the Python bytecode level, while TorchInductor translates programs for efficient execution on GPUs and CPUs, maintaining the dynamism inherent in PyTorch and allowing for easy user customization.
+images: ['/static/images/events/seminar_4_29/choukse_esha.png']
+---
+
+<p align="justify">
+This week, our MLSys seminar features another talk by Dr. Jason Ansel scheduled on **Tuesday (4/30) 5 - 6.30 pm**. We welcome all interested students and faculty to attend the talk on Zoom: https://ucsd.zoom.us/j/8430869005.
+
+**Talk title:** PyTorch 2: Faster Machine Learning Through Dynamic Python Bytecode Transformation and Graph
+
+**Talk Abstract:** PyTorch 2 uses compilers to deliver faster training and inference without sacrificing the usability and flexibility PyTorch is known for.  PyTorch 2 is fully backward compatible and continues to provide an interactive, extensible, easy to debug, and Pythonic programming environment for AI researchers, data scientists and engineers. PyTorch 2 is able to provide a 2.27x inference and 1.41x training geometric mean speedup on an NVIDIA A100 GPU across 180+ real-world models, which outperforms six other compilers.
+
+This talk will cover key technologies behind PyTorch 2: TorchDynamo and TorchInductor.  TorchDynamo is a Python-level JIT compiler designed to make unmodified PyTorch programs faster. TorchDynamo hooks into the frame evaluation API in CPython to dynamically modify Python bytecode right before it is executed. It rewrites Python bytecode in order to extract sequences of PyTorch operations into an FX Graph which is then just-in-time compiled with many extensible backends. It creates this FX Graph through bytecode analysis and is designed to generate smaller graph fragments that can be mixed with Python execution to get the best of both worlds: usability and performance.
+
+TorchInductor is the new compiler backend included in PyTorch 2.  It translates PyTorch programs into OpenAI's Triton for GPUs and OpenMP/C++ for CPUs.  TorchInductor is able to handle the flexibility and dynamism of PyTorch by using similar abstractions to PyTorch eager mode.   It introduces a new define-by-run loop level intermediate representation (IR) to make it easy to add new operator lowering. Finally, it is implemented in Python, so it is easy for PyTorch users to extend and modify to meet their needs.
+</p>
+
+<center>
+![ansel_jason](/static/images/events/seminar_4_30/ansel_jason.jpeg)
+</center>
+
+<p align="justify">
+**Bio:** Jason Ansel is a Principal Research Scientist at Meta AI and a technical lead for PyTorch compilers. He started the TorchDynamo and TorchInductor projects, which bring flexible graph capture and a high performance compiler to PyTorch 2. He received a Ph.D. from MIT CSAIL in 2014 with research focusing on the boundary of machine learning, compilers, and programming languages.
+</p>
