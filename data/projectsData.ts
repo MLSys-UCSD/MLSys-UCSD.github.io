@@ -7,6 +7,12 @@ interface Project {
 
 const projectsData: Project[] = [
   {
+    title: 'MuxServe: Flexible Spatial-Temporal Multiplexing for Multiple LLM Serving',
+    description: `MuxServe is a serving system using flexible spatial-temporal multiplexing, leverages dynamic LLM popularity and unbalanced resource utilization to achieve high GPU utilization and reduce serving costs, outperforming baselines by 1.8x in throughput and 2.9x in SLO attainment on synthetic workloads.`,
+    imgSrc: '/static/images/projects/muxserve_cover.gif',
+    href: 'https://hao-ai-lab.github.io/blogs/muxserve/',
+  },
+  {
     title: 'Preble: Efficient Prompt Scheduling for Augmented Large Language Models',
     description: `LLM prompts are getting longer and increasingly shared with agents, tools, documents, etc. We introduce Preble, the first distributed LLM serving system targeting long and shared prompts. Preble reduces latency by 1.5-14.5x over SOTA serving systems.`,
     imgSrc: '/static/images/projects/preble_mlsys_gif.gif',

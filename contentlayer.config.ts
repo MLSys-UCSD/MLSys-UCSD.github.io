@@ -85,7 +85,7 @@ export const Blog = defineDocumentType(() => ({
     tags: { type: 'list', of: { type: 'string' }, default: [] },
     lastmod: { type: 'date' },
     draft: { type: 'boolean' },
-    speakers: {type: 'string'},
+    speakers: {type: 'string' },
     summary: { type: 'string' },
     images: { type: 'json' },
     authors: { type: 'list', of: { type: 'string' } },
@@ -111,7 +111,6 @@ export const Blog = defineDocumentType(() => ({
     },
   },
 }))
-
 
 export const Publication = defineDocumentType(() => ({
   name: 'Publication',
