@@ -11,6 +11,9 @@ export default function Page() {
   const faculty = authors.filter(
     (author) => author.occupation && author.occupation.includes('Professor')
   )
+  const advisor = authors.filter(
+    (author) => author.occupation && author.occupation.includes('Director')
+  )
   const phd_students = authors.filter(
     (author) => author.occupation && author.occupation.includes('PhD')
   )
@@ -28,6 +31,23 @@ export default function Page() {
           <div className="space-y-2 pb-8 pt-6 md:space-y-5">
             <h1 className="text-2xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-2xl sm:leading-10 md:text-4xl md:leading-14">
               Faculty
+            </h1>
+          </div>
+          <div className="items-start space-y-2 xl:grid xl:grid-cols-4 xl:gap-x-8 xl:space-y-0">
+            {faculty.map((author) => {
+              const mainContent = coreContent(author)
+              return (
+                <AuthorLayout key={author._id} content={mainContent}>
+                  <MDXLayoutRenderer code={author.body.code} />
+                </AuthorLayout>
+              )
+            })}
+          </div>
+        </div>
+        <div className="divide-y divide-gray-200 dark:divide-gray-700">
+          <div className="space-y-2 pb-8 pt-6 md:space-y-5">
+            <h1 className="text-2xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-2xl sm:leading-10 md:text-4xl md:leading-14">
+              Advisors
             </h1>
           </div>
           <div className="items-start space-y-2 xl:grid xl:grid-cols-4 xl:gap-x-8 xl:space-y-0">

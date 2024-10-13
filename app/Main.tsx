@@ -1,9 +1,12 @@
+import Image from 'next/image'
 import Link from '@/components/Link'
 import Tag from '@/components/Tag'
 import siteMetadata from '@/data/siteMetadata'
 import { formatDate } from 'pliny/utils/formatDate'
 
 const MAX_DISPLAY = 5
+
+const sponsors = ['/static/images/sponsors/hdsi.png']
 
 export default function Home({ posts }) {
   return (
@@ -128,6 +131,17 @@ export default function Home({ posts }) {
             </Link>
           </div>
         )}
+      {/* Sponsor Section */}
+      <div className="my-12">
+        <h2 className="text-2xl font-bold text-gray-900 dark:text-gray-100">Our Sponsors</h2>
+        <div className="mt-6 grid grid-cols-2 gap-4 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5">
+          {sponsors.map((src, index) => (
+            <div key={index} className="relative h-20 w-full">
+              <Image src={src} alt={`Sponsor ${index + 1}`} layout="fill" objectFit="contain" />
+            </div>
+          ))}
+        </div>
+      </div>
       {/* {siteMetadata.eventsletter?.provider && (
         <div className="flex items-center justify-center pt-4">
           <eventsletterForm />
