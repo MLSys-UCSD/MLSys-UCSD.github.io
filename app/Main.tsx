@@ -133,7 +133,7 @@ export default function Home({ posts }) {
         )}
       {/* Sponsor Section */}
       <div className="my-12">
-        <h2 className="text-2xl font-bold text-gray-900 dark:text-gray-100">Our Sponsors</h2>
+        <h2 className="center text-3xl font-bold text-gray-900 dark:text-gray-100">Sponsors</h2>
         <div className="mt-6 grid grid-cols-2 gap-4 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5">
           {sponsors.map((src, index) => (
             <div key={index} className="relative h-20 w-full">

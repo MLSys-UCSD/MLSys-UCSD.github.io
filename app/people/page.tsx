@@ -11,7 +11,7 @@ export default function Page() {
   const faculty = authors.filter(
     (author) => author.occupation && author.occupation.includes('Professor')
   )
-  const advisor = authors.filter(
+  const advisors = authors.filter(
     (author) => author.occupation && author.occupation.includes('Director')
   )
   const phd_students = authors.filter(
@@ -51,7 +51,7 @@ export default function Page() {
             </h1>
           </div>
           <div className="items-start space-y-2 xl:grid xl:grid-cols-4 xl:gap-x-8 xl:space-y-0">
-            {faculty.map((author) => {
+            {advisors.map((author) => {
               const mainContent = coreContent(author)
               return (
                 <AuthorLayout key={author._id} content={mainContent}>
