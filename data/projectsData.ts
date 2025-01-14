@@ -8,7 +8,7 @@ interface Project {
 const projectsData: Project[] = [
   {
     title: 'Efficient LLM Scheduling by Learning to Rank',
-    description: `Traditional Large Language Model (LLM) serving systems use first-come-first-serve (FCFS) scheduling, leading to delays when longer requests block shorter ones. The unpredictability of LLM workloads and output lengths further complicates scheduling. We introduced a learning-to-rank method to predict output length rankings, enabling a Shortest Job First-like policy and reducing chatbot latency by 6.9x under high load compared to FCFS.`,
+    description: `Traditional Large Language Model (LLM) serving systems use first-come-first-serve (FCFS) scheduling, leading to delays when longer requests block shorter ones. We introduced a learning-to-rank method to predict output length rankings, enabling a Shortest Job First-like policy and reducing chatbot latency by 6.9x under high load compared to FCFS.`,
     imgSrc: '/static/images/projects/llm-ltr-cover.jpg',
     href: 'https://hao-ai-lab.github.io/blogs/vllm-ltr',
   },
