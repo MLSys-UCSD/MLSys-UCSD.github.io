@@ -7,6 +7,12 @@ interface Project {
 
 const projectsData: Project[] = [
   {
+    title: 'Efficient LLM Scheduling by Learning to Rank',
+    description: `Traditional Large Language Model (LLM) serving systems use first-come-first-serve (FCFS) scheduling, leading to delays when longer requests block shorter ones. We introduced a learning-to-rank method to predict output length rankings, enabling a Shortest Job First-like policy and reducing chatbot latency by 6.9x under high load compared to FCFS.`,
+    imgSrc: '/static/images/projects/llm-ltr-cover.jpg',
+    href: 'https://hao-ai-lab.github.io/blogs/vllm-ltr',
+  },
+  {
     title: "Can Scheduling Overhead Dominate LLM Inference Performance? A Study of CPU Scheduling Overhead on Two Popular LLM Inference Systems",
     description: "CPU scheduling overhead can dominate LLM inference time—up to 50% in systems like vLLM! Scheduling overhead can no longer be ignored as model forwarding speeds increase and more scheduling tasks get added.",
     imgSrc: '/static/images/projects/iterative_scheduling_gif.gif',
@@ -41,13 +47,7 @@ const projectsData: Project[] = [
     description: `DistServe is goodput-optmized LLM serving system that supports prefill-decode disaggregation, a.k.a. splitting prefill from decode into different GPUs, to account for both cost and user satisfaction. DistServe achieves up to 4.48x goodput or 10.2x tighter SLO compared to exiting state-of-the-art serving systems, while staying within tight latency constraints.`,
     imgSrc: '/static/images/projects/distserve_anime-crop.gif',
     href: 'https://hao-ai-lab.github.io/blogs/distserve',
-  },
-  {
-    title: 'Efficient LLM Scheduling by Learning to Rank',
-    description: `Traditional Large Language Model (LLM) serving systems use first-come-first-serve (FCFS) scheduling, leading to delays when longer requests block shorter ones. The unpredictability of LLM workloads and output lengths further complicates scheduling. We introduced a learning-to-rank method to predict output length rankings, enabling a Shortest Job First-like policy and reducing chatbot latency by 6.9x under high load compared to FCFS.`,
-    imgSrc: '/static/images/projects/llm-ltr-cover.jpg',
-    href: 'https://hao-ai-lab.github.io/blogs/vllm-ltr',
-  },
+  }
 ]
 
 export default projectsData
