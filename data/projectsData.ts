@@ -7,6 +7,12 @@ interface Project {
 
 const projectsData: Project[] = [
   {
+    title: 'Cognify: A Comprehensive, Multi-Faceted Gen AI Workflow Optimizer',
+    description: `TL;DR: Building high-quality, cost-effective generative AI applications is challenging due to the absence of systematic methods for tuning, testing, and optimization. We introduce Cognify, a tool that automatically enhances generation quality and reduces costs for generative AI workflows, including those written with LangChain, DSPy, and annotated Python. Built on a novel foundation of hierarchical, workflow-level optimization, Cognify delivers up to a 48% improvement in generation quality and up to 9x cost reduction. Cognify is publicly available at https://github.com/GenseeAI/cognify.`,
+    imgSrc: '/static/images/projects/cognify.jpg',
+    href: 'https://mlsys.wuklab.io/posts/cognify/',
+  },
+  {
     title: 'Efficient LLM Scheduling by Learning to Rank',
     description: `Traditional Large Language Model (LLM) serving systems use first-come-first-serve (FCFS) scheduling, leading to delays when longer requests block shorter ones. We introduced a learning-to-rank method to predict output length rankings, enabling a Shortest Job First-like policy and reducing chatbot latency by 6.9x under high load compared to FCFS.`,
     imgSrc: '/static/images/projects/llm-ltr-cover.jpg',
