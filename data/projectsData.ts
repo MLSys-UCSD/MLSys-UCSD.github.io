@@ -19,6 +19,12 @@ const projectsData: Project[] = [
     href: 'https://hao-ai-lab.github.io/blogs/vllm-ltr',
   },
   {
+    title: 'Imprompter: Tricking LLM Agents into Improper Tool Use',
+    description: `We contribute to the security foundations of agent-based systems and surface a new class of automatically computed obfuscated adversarial prompt attacks that violate the confidentiality and integrity of user resources connected to an LLM agent. We show an information exfiltration attack on Mistral's LeChat agent that analyzes a user's conversation, picks out personally identifiable information, and formats it into a valid markdown command that results in leaking that data to the attacker's server.`,
+    imgSrc: '/static/images/projects/imprompter.png',
+    href: 'https://imprompter.ai/',
+  },
+  {
     title: "Can Scheduling Overhead Dominate LLM Inference Performance? A Study of CPU Scheduling Overhead on Two Popular LLM Inference Systems",
     description: "CPU scheduling overhead can dominate LLM inference time—up to 50% in systems like vLLM! Scheduling overhead can no longer be ignored as model forwarding speeds increase and more scheduling tasks get added.",
     imgSrc: '/static/images/projects/iterative_scheduling_gif.gif',
