@@ -7,6 +7,13 @@ interface Project {
 
 const projectsData: Project[] = [
   {
+    title: 'GameArena: Evaluating LLM Reasoning through Live Computer Games',
+    description: `We developed a live Roblox game, AI Space Escape, powered by state-of-the-art large language models (LLMs), offering a unique experience to reason with AI. Beyond entertainment, our game generates gaming data for evaluating AI reasoning abilities in real-world scenarios, extending beyond math and coding benchmarks. All gaming data, evaluation scripts, and code are publicly available for further research.`,
+    imgSrc: '/static/images/projects/gamearena-cover.jpg',
+    href: 'https://lmgame.org/#/blog/ai_space_escape',
+
+  },
+  {
     title: 'Cognify: A Comprehensive, Multi-Faceted Gen AI Workflow Optimizer',
     description: `TL;DR: Building high-quality, cost-effective generative AI applications is challenging due to the absence of systematic methods for tuning, testing, and optimization. We introduce Cognify, a tool that automatically enhances generation quality and reduces costs for generative AI workflows, including those written with LangChain, DSPy, and annotated Python. Built on a novel foundation of hierarchical, workflow-level optimization, Cognify delivers up to a 48% improvement in generation quality and up to 9x cost reduction. Cognify is publicly available at https://github.com/GenseeAI/cognify.`,
     imgSrc: '/static/images/projects/cognify.jpg',
