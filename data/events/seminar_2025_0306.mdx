@@ -1,0 +1,24 @@
+---
+title: 'The EAGLE Series: Lossless Inference Acceleration for LLMs'
+date: '2025-03-06 18:30:00'
+tags: ['MLSys Seminar']
+draft: false
+authors: ['mlsys', 'hosts/host_zhang_hao', 'hosts/host_abhilash_shankarampeta']
+speakers: 'Speaker: Prof. Hongyang Zhang, University of Waterloo'
+summary: This talk presents the EAGLE series, a groundbreaking approach to accelerating large language model inference without compromising output quality. Instead of traditional token-level processing, EAGLE operates at the structured feature level and incorporates sampling results to reduce uncertainty. The technology has gained significant industry adoption, with integration into major frameworks including vLLM, SGLang, TensorRT-LLM, and several others from AWS and Intel.
+images: ['/static/images/events/seminar_2025_0306/hongyang_zhang.jpeg']
+---
+
+<p align="justify">
+This week, our MLSys seminar is pleased to present a talk by Prof. Hongyang Zhang scheduled on **Thursday, March 06 @ 6:30 PM (PST)**. We welcome all interested students and faculty to attend the talk on Zoom: https://ucsd.zoom.us/j/97555840240 (Zoom-only)
+
+**Talk title:** The EAGLE Series: Lossless Inference Acceleration for LLMs.
+
+**Talk Abstract:** This talk introduces the EAGLE series, a lossless acceleration algorithm for large language models that performs autoregression at a structured feature level rather than the token level, incorporating sampling results to eliminate uncertainty. These innovations make EAGLE’s draft model both lightweight and highly accurate, accelerating inference by 2.1x–3.8x while provably preserving the output distribution. EAGLE-2 enhances this with dynamic draft trees, leveraging confidence estimates to approximate draft token acceptance rates and dynamically adjusting tree structures to maximize acceptance length, achieving an additional 20%–40% speed boost over EAGLE-1 for a total acceleration of 2.5x–5.0x while maintaining the original output distribution. We will also introduce our latest algorithm, EAGLE-3. The EAGLE series has been widely adopted in the industry and integrated into open-source frameworks, including vLLM, SGLang, TensorRT-LLM, MLC-LLM, AWS NeuronX Distributed Core, Intel LLM Library for PyTorch, and Intel Extension for Transformers.
+</p>
+
+<center>![hongyang_zhang](/static/images/events/seminar_2025_0306/hongyang_zhang.jpeg)</center>
+
+<p align="justify">
+**Bio:** Hongyang Zhang is a tenure-track assistant professor at the University of Waterloo and Vector Institute for AI. He received his PhD in 2019 from the Machine Learning Department at Carnegie Mellon University and completed a Postdoc at Toyota Technological Institute at Chicago. He is the winner of the NeurIPS 2018 Adversarial Vision Challenge, CVPR 2021 Security AI Challenger, AAAI New Faculty Highlights, Amazon Research Award, and WAIC Yunfan Award. He also regularly serves as an area chair for NeurIPS, ICLR, ICML, AISTATS, AAAI, ALT and an action editor for DMLR.
+</p>
